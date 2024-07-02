@@ -21,7 +21,8 @@ module.exports = {
   },
   plugins: [
       'react-refresh',
-      'react'
+      'react',
+      "react-compiler"
   ],
   rules: {
     'react-refresh/only-export-components': [
@@ -29,6 +30,8 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "react-compiler/react-compiler": "error",
+    "@typescript-eslint/no-explicit-any": "error"
   },
 }
